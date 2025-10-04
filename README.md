@@ -64,15 +64,9 @@ If you want to share this quiz as a single executable file (.exe) for Windows:
    ```
 2. Generate the exe:
    ```bash
-   pyinstaller --onefile --icon=quiz_icon.ico quiz.py
+   pyinstaller --onefile --add-data "urlLib.py;." --hidden-import=requests --icon=Logo.ico quiz.py
    ```
 3. The exe will appear in the `dist` folder.
-
----
-
-## Screenshot
-
-*(Optional: add a screenshot of the quiz here)*
 
 ---
 
